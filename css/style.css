@@ -65,7 +65,7 @@ nav>h1::before{
 }
 
 .right{
-    background-image: url("/img/leftimg.avif");
+    background-image: url("img/leftimg.avif");
     height: 300px;
     width: 300px;
     background-size: cover;
