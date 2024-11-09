@@ -34,17 +34,49 @@ nav>h1{
 }
 .right{
     background-image: url("/img/leftimg.avif");
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
     background-size: cover;
     border-radius: 35%;
     transition: all;
     transition-duration: 2ms;
     transition-timing-function: linear;
-    /* transform: translateX(200px);
-    position: absolute; */
+}
+.right::before{
+    content: "";
+    position: absolute;
+    /* background:rgba(0, 20, 170,0.8); */
+    width: 300px;
+    height: 300px;
+    border: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: rgba(0, 20, 170,0.5);
+    border-radius: 50%;
+    margin-left: -20px;
+    animation-name: round;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+@keyframes round {
+    0%{
+        rotate: 150deg;
+        opacity: 0%;
+    }
+    50%{
+       opacity: 100%;
+    }
+    100%{
+        rotate: -150deg;
+        opacity: 0%;
+    }
 }
 .left{
+
+
     align-self: flex-start;
     padding-top: 5%;
     line-height: 50px;
