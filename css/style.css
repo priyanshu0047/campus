@@ -34,8 +34,8 @@ nav>h1{
 }
 .right{
     background-image: url("/img/leftimg.avif");
-    height: 280px;
-    width: 280px;
+    height: 300px;
+    width: 300px;
     background-size: cover;
     border-radius: 35%;
     transition: all;
