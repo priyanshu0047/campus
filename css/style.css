@@ -17,6 +17,7 @@ main{
 }
 
 nav{
+    margin-top: 20px;
     padding: 7% 0% 5% 7%;
 }
 header{
@@ -33,6 +34,36 @@ nav>h1{
     font-weight: bolder;
     font-family: sans-serif;
 }
+
+nav>h1::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: rgba(0, 20, 170,0.8);
+    animation-name: show;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 35px;
+
+}
+@keyframes show {
+    0%{
+        width: 10px;
+       
+       
+    }
+    50%{
+        width: 40px;
+    }
+    100%{
+        width: 70px;
+    }
+    
+}
+
 .right{
     background-image: url("/img/leftimg.avif");
     height: 300px;
