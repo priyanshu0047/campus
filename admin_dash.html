@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admin_style.css">
+    <style>
+        @media  (max-width:700px){
+    .right{
+        display: none;
+    }
+    .left{
+        background-image: url("/img/admin.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 300px;
+       
+    }
+    .left>h1{
+        color: blue;
+    }
+    .left>h1>span{
+        color: rgb(90, 20, 170);
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="right" style="background-image: url('/img/admin.webp');"></div>
+            <div class="left">
+                 <h1>Admin <span>login</span></h1><br>
+                 <label>
+                    email <br><input type="email" name="student_email">
+                 </label>
+                 <label>
+                    password <br>
+                     <input type="password" name="student_email">
+                 </label><br>
+                 <a href="#"><p>Forget password ?</p></a>
+                 <a href="#"><p>don't have account</p></a>
+                 <button type="submit">login</button>
+            </div>
+        </header>
+    </main>
+</body>
+</html>
