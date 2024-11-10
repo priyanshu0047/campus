@@ -9,6 +9,7 @@ body{
     /* background-image: linear-gradient(70deg,red,green); */
     background-repeat: no-repeat;
     overflow: hidden;
+    padding-top: 10px;
 }
 main{
     width: 100vw;
@@ -44,7 +45,8 @@ nav>h1::before{
     animation-name: show;
     animation-timing-function: linear;
     animation-fill-mode: both;
-    animation-duration: 3s;
+    animation-duration: 2s;
+ 
     animation-iteration-count: infinite;
     margin-top: 35px;
 
@@ -52,7 +54,7 @@ nav>h1::before{
 @keyframes show {
     0%{
         width: 10px;
-       
+        
        
     }
     50%{
@@ -60,10 +62,18 @@ nav>h1::before{
     }
     100%{
         width: 70px;
+        color: red;
     }
     
 }
-
+#A{
+    animation-name: show;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
 .right{
     background-image: url("/img/leftimg.avif");
     height: 300px;
